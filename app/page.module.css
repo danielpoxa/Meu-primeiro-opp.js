@@ -6,33 +6,65 @@
   align-items: center;
   flex-direction: column;
   height: 100vh;
-  background-image: linear-gradient(135deg, #312e2b 0%, #ffffff 100%);
-  padding: 20px;
-  border: 10px solid #f1a20d; /* Added blue border */
-  border-radius: 15px; /* Rounded corners for a modern look */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+  background-image: linear-gradient(135deg, #292624 0%, #f0f0f0 100%);
+  padding: 30px;
+  border: 8px solid #f1a20d;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease-in-out;
 }
 
 .title {
-  color: #e63600; /* Deep blue for a modern, tech feel */
-  font-size: 4rem; /* Increased size for emphasis */
-  margin-bottom: 30px;
+  color: #d32f2f;
+  font-size: 4.5rem;
+  margin-bottom: 40px;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 3px; /* Slightly more spacing */
-  border-bottom: 4px solid #ff9800; /* Orange underline for contrast */
-  padding-bottom: 10px; /* Spacing to accommodate underline */
+  letter-spacing: 4px;
+  border-bottom: 5px solid #ff9800;
+  padding-bottom: 15px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.title:hover {
+  color: #ff6f00;
+  transform: scale(1.05); /* Efeito de destaque no título */
 }
 
 .description {
-  font-size: 1.5rem; /* Increased for readability */
-  color: #333; /* Dark grey for better contrast */
+  font-size: 1.6rem;
+  color: #333;
   text-align: center;
-  max-width: 800px; /* Increased width */
-  line-height: 2; /* Enhanced line spacing for readability */
-  margin-top: 20px; /* More space between title and text */
-  padding: 15px;
-  background-color: #f0f8ff; /* Light background for text block */
-  border-left: 6px solid #ff9800; /* Orange left border for modern touch */
-  border-radius: 10px; /* Rounded corners */
+  max-width: 900px;
+  line-height: 1.8;
+  margin-top: 25px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-left: 6px solid #ff9800;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra leve para destaque */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.description:hover {
+  background-color: #fff2e6;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.container::before {
+  content: '🦾'; /* Ícone representando o Homem de Ferro */
+  font-size: 5rem;
+  display: block;
+  color: #ff9800;
+  margin-bottom: 20px;
+  animation: bounce 1s infinite alternate; /* Animação suave no ícone */
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
 }

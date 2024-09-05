@@ -1,4 +1,71 @@
-.portifolio {
-    height: 100vh;
-    text-align: center;
+/* portfolio.module.css */
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: linear-gradient(135deg, #2e2b28 0%, #ffffff 100%);
+  padding: 30px;
+  border: 10px solid #f1a20d;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: all 0.4s ease-in-out;
+}
+
+.portfolio h1 {
+  color: #d32f2f;
+  font-size: 3.5rem;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  border-bottom: 5px solid #ff9800;
+  padding-bottom: 12px;
+  animation: fadeIn 1s ease-in-out;
+  transition: transform 0.3s ease;
+}
+
+.portfolio h1:hover {
+  transform: scale(1.1); /* Efeito de destaque no título */
+}
+
+.portfolio h2 {
+  color: #d32f2f;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.portfolio p {
+  font-size: 1.3rem;
+  color: #333;
+  line-height: 1.7;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-left: 6px solid #ff9800;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio p:hover {
+  background-color: #fff2e6;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Animação de fade-in para títulos */
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
 }

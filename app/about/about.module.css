@@ -1,4 +1,42 @@
+/* about.module.css */
+
 .about {
-    height: 100vh;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: linear-gradient(135deg, #2c2a27 0%, #fafafa 100%);
+  padding: 30px;
+  border: 8px solid #f1a20d;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease-in-out;
 }
+
+.about h1 {
+  color: #b71c1c; /* Vermelho escuro inspirado no traje do Homem de Ferro */
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 20px 0;
+  text-align: center;
+  line-height: 1.6;
+  padding: 0 20px;
+  max-width: 850px;
+  font-family: 'Roboto', sans-serif;
+  transition: color 0.3s ease;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.about h1:hover {
+  color: #ff6f00; /* Efeito de destaque ao passar o mouse */
+}
+
+.about::before {
+  content: '🦾';
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 15px;
+  color: #ff9800; /* Cor laranja vibrante para um toque moderno */
+}
+

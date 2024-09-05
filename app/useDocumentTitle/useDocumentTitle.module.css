@@ -1,0 +1,132 @@
+/* useDocumentTitle.module.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: linear-gradient(135deg, #2e2b28 0%, #ffffff 100%);
+    padding: 20px;
+    border: 10px solid #f1a20d;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .title {
+    color: #e63600;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-bottom: 4px solid #ff9800;
+    padding-bottom: 12px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .inputContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+  }
+  
+  .inputField {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.3rem;
+    border: 2px solid #ff9800;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 15px;
+  }
+  
+  .inputField:focus {
+    border-color: #e63600;
+    box-shadow: 0 0 10px rgba(230, 54, 0, 0.3); /* Efeito de foco */
+  }
+  
+  .currentTitle {
+    font-size: 1.7rem;
+    color: #333;
+    margin-top: 20px;
+    background-color: #f0f8ff;
+    border-left: 6px solid #ff9800;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .currentTitle:hover {
+    background-color: #fff7e6;
+  }
+  
+  .buttonContainer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+  }
+  
+  .button {
+    background-color: #ff9800;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .button:hover {
+    background-color: #e63600;
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 768px) {
+    .title {
+      font-size: 2.5rem;
+    }
+  
+    .inputField {
+      font-size: 1.1rem;
+    }
+  
+    .currentTitle {
+      font-size: 1.5rem;
+    }
+  }
+  
+  /* useDocumentTitle.module.css */
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .button {
+    background-color: #ff9800;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .button:hover {
+    background-color: #e63600;
+    transform: scale(1.05);
+  }
+  
