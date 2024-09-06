@@ -18,6 +18,7 @@ export default function Header() {
                     <li><Link href="/useToggle">Mostrar Texto</Link></li>
                     <li><Link href="/useLocalStorage">Armazenar Valor</Link></li>
                     <li><Link href="/useDocumentTitle">Atualizar Título de Documento</Link></li>
+                    <li><Link href="/Sobre">Sobre</Link></li>
                 </ul>
             </nav>
         </header>

@@ -1,0 +1,58 @@
+/* sobre.module.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: linear-gradient(135deg, #292624 0%, #f0f0f0 100%);
+    padding: 20px;
+    border: 10px solid #f1a20d;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .sobreContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  .sobreTitle {
+    font-size: 2rem;
+    color: #d32f2f;
+    margin-bottom: 15px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .sobreButton {
+    background-color: #ff9800;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sobreButton:hover {
+    background-color: #e63600;
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 768px) {
+    .sobreTitle {
+      font-size: 1.5rem;
+    }
+  
+    .sobreButton {
+      font-size: 1rem;
+      padding: 8px 16px;
+    }
+  }
+  

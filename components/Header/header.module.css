@@ -1,36 +1,64 @@
 .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #312e2b; /* Cor de fundo escura para contraste */
-    padding: 15px 20px;
-    border-bottom: 10px solid #f1a20d; /* Bordas laranja para consistência */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil para profundidade */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #312e2b; /* Cor de fundo escura para contraste */
+  padding: 15px 20px;
+  border-bottom: 10px solid #f1a20d; /* Bordas laranja para consistência */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil para profundidade */
+}
+
+.header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px; /* Espaçamento entre os itens do menu */
+}
+
+.header li {
+  margin: 0;
+}
+
+.header a {
+  text-decoration: none;
+  color: #ffffff; /* Cor do texto branca para contraste */
+  font-size: 1.2rem;
+  padding: 10px 15px;
+  border-radius: 5px; /* Bordas arredondadas dos itens */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
+}
+
+.header a:hover {
+  background-color: #e63600; /* Cor de fundo ao passar o mouse */
+  color: #ffffff; /* Cor do texto ao passar o mouse */
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+  .header {
+      padding: 10px;
+      justify-content: flex-start;
   }
   
   .header ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 15px; /* Espaçamento entre os itens do menu */
+      flex-direction: column; /* Itens do menu em coluna */
+      gap: 10px;
+      border-radius: 10px;
+      display: flex;
+      
   }
-  
-  .header li {
-    margin: 0;
-  }
-  
+
   .header a {
-    text-decoration: none;
-    color: #ffffff; /* Cor do texto branca para contraste */
-    font-size: 1.2rem;
-    padding: 10px 15px;
-    border-radius: 5px; /* Bordas arredondadas dos itens */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
+      font-size: 1rem; /* Diminuir o tamanho da fonte */
+      padding: 8px 12px;
   }
-  
-  .header a:hover {
-    background-color: #e63600; /* Cor de fundo ao passar o mouse */
-    color: #ffffff; /* Cor do texto ao passar o mouse */
+}
+
+/* Responsividade para telas menores (smartphones) */
+@media (max-width: 480px) {
+  .header a {
+      font-size: 0.9rem; /* Reduzir mais o tamanho da fonte para telas pequenas */
+      padding: 6px 10px;
   }
-  
+}

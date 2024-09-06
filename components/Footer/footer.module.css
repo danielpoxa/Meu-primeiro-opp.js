@@ -1,6 +1,27 @@
-.footer{
+/* footer.module.css */
+
+.footer {
     height: 100px;
-    background-color: gray;
-    color: white;
+    background-color: #292624; /* Cor de fundo semelhante ao gradiente da página */
+    color: #f1a20d; /* Cor do texto que combina com o borda da página */
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 8px solid #ff9800; /* Borda superior para adicionar detalhe */
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2); /* Sombra leve para destaque */
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        height: 80px;
+        font-size: 0.9rem;
+    }
 }
