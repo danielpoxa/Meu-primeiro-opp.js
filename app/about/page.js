@@ -7,10 +7,8 @@ export default function About() {
     return (
         <div className={styles.about}>
             <h1>
-                “Homem de Ferro, o alter ego do gênio, bilionário, playboy e filantropo Tony Stark, 
-                é um dos super-heróis mais influentes e amados do universo Marvel. Criado por Stan Lee, 
-                Larry Lieber, Don Heck e Jack Kirby, ele fez sua primeira aparição nos quadrinhos 
-                em Tales of Suspense #39 em 1963.”
+            O navegador para os jogadores
+            Obtêm uma experiência de jogo e navegação incomparável no telemovel e no computador. Define limites de uso de CPU, RAM e rede. Usa o Discord & Twitch na barra lateral.
             </h1>
         </div>
     );

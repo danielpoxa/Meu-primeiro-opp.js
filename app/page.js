@@ -1,21 +1,46 @@
+"use client";  // Adiciona essa linha no início do arquivo
+
 import Image from "next/image";
 import styles from "./page.module.css";
+import { useRouter } from "next/navigation";  // Mantém a atualização para next/navigation
 
-export default function Home() {
+export default function Opera() {
+  const router = useRouter();
+
+  const handleButtonClick = () => {
+    router.push("https://www.opera.com/pt-br/computer/thanks?ni=eapgx&os=windows&gclid=EAIaIQobChMI1ozplqa7iAMVgUBIAB2QjQX-EAAYASAAEgL0ofD_BwE");
+  };
+
   return (
     <div className={styles.container}>
       <div className={styles.imageContainer}>
         <Image
-          src="/homemdeferro.png" // Substitua pelo caminho correto da sua imagem
-          alt="Homem de Ferro"
-          width={400} // Ajustado para um tamanho proporcional
-          height={400} // Ajustado para um tamanho proporcional
+          src="/Opera 1.png"
+          alt="Opera"
+          width={700}
+          height={700}
         />
+       
       </div>
-      <h1 className={styles.title}>Homem de Ferro</h1>
+      <h1 className={styles.title}>O navegador dos gamers</h1>
+
+      <p className={styles.titulo}></p>
+
       <p className={styles.description}>
-        "Homem de Ferro (Iron Man) é um dos personagens mais icônicos da Marvel Comics, criado por Stan Lee, Larry Lieber, Don Heck, e Jack Kirby. Ele fez sua primeira aparição em 'Tales of Suspense #39' em 1963. O personagem é o alter ego de Tony Stark, um gênio, bilionário, playboy e filantropo, que usa sua inteligência e recursos para criar uma armadura poderosa, transformando-se no super-herói Homem de Ferro."
+        Obtêm uma experiência de jogo e navegação incomparável no telemovel e no
+        computador. Define limites de uso de CPU, RAM e rede. Usa o Discord & Twitch na barra lateral.
       </p>
+
+      {/* Torna a imagem clicável, envolvendo-a em uma tag <a> */}
+      <a href="/" target="_blank" rel="noopener noreferrer">
+        <Image
+          className={styles.img1}
+          src="/descarregar opera.png"
+          alt="Descarregar Opera GX"
+          width={500}
+          height={90}
+        />
+      </a>
     </div>
   );
 }
